@@ -1,0 +1,679 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contaner {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* 
+fcfffd
+fff0f3
+ffccd5
+ffb3c1
+ff8fa3
+ff758f
+ff4d6d
+c9184a
+a4133c
+800f2f
+590d22
+
+*/
+
+.header-contant {
+    width: 100%;
+    height: 80px;
+    ;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+}
+
+.header-contant img {
+    width: 150px;
+    height: 80px;
+
+}
+
+.header-contant .header-list,
+.header-contant .header-icon .header-icon-list {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-between; */
+
+}
+
+.header-contant .header-list li,
+.header-contant .header-icon .header-icon-list li {
+    padding: 15px;
+    list-style: none;
+}
+
+.header-contant .header-list li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #590d22;
+}
+
+.Categories-list {
+    /* width: 400px; */
+    background-color: #fcfffd;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    visibility: hidden;
+    border: 2px solid #a4133c;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.Categories-list .Categories-1 li {
+    padding: 3px 10px;
+}
+
+.Categories-list .Categories-1 li:first-child {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.Categories-list .Categories-1 li a {
+    font-size: 18px;
+    color: #a4133c;
+}
+
+.Categories-list .Categories-1 li:first-child a {
+    /* display: block; */
+    border-bottom: 1px dashed #a4133c;
+    padding-bottom: 3px;
+}
+
+.header-list .cate:hover .Categories-list {
+    visibility: visible;
+}
+
+.header-list li:hover .left {
+    width: 3px;
+    height: 30px;
+    background-color: #800f2f;
+    animation-name: left;
+    animation-duration: 0.5s;
+    position: absolute;
+}
+
+.header-list li:hover .right {
+    width: 3px;
+    height: 30px;
+    background-color: #800f2f;
+    animation-name: right;
+    animation-duration: 0.5s;
+    position: absolute;
+}
+
+.header-list li:hover .top {
+    height: 3px;
+    background-color: #800f2f;
+    animation-name: top;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    position: absolute;
+    top: 25px;
+}
+
+.header-list li:hover .bottom {
+    height: 3px;
+    background-color: #800f2f;
+    animation-name: bottom;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+    position: absolute;
+    top: 55px;
+}
+
+.header-list li:hover .left1 {
+    left: 220px;
+}
+
+.header-list li:hover .right1 {
+    left: 385px;
+}
+
+.header-list li:hover .top1 {
+    width: 168Px;
+    left: 220px;
+}
+
+.header-list li:hover .bottom1 {
+    width: 168px;
+    left: 220px;
+}
+
+.header-list li:hover .left2 {
+    left: 400px;
+}
+
+.header-list li:hover .right2 {
+    left: 510px;
+}
+
+.header-list li:hover .top2 {
+    width: 113Px;
+    left: 400px;
+}
+
+.header-list li:hover .bottom2 {
+    width: 113px;
+    left: 400px;
+}
+
+.header-list li:hover .left3 {
+    left: 525px;
+}
+
+.header-list li:hover .right3 {
+    left: 605px;
+}
+
+.header-list li:hover .top3 {
+    width: 83Px;
+    left: 525px;
+}
+
+.header-list li:hover .bottom3 {
+    width: 83px;
+    left: 525px;
+}
+
+.header-list li:hover .left4 {
+    left: 620px;
+}
+
+.header-list li:hover .right4 {
+    left: 740px;
+}
+
+.header-list li:hover .top4 {
+    width: 123px;
+    left: 620px;
+}
+
+.header-list li:hover .bottom4 {
+    width: 123px;
+    left: 620px;
+}
+
+.header-list li:hover .left5 {
+    left: 760px;
+}
+
+.header-list li:hover .right5 {
+    left: 820px;
+}
+
+.header-list li:hover .top5 {
+    width: 63px;
+    left: 760px;
+}
+
+.header-list li:hover .bottom5 {
+    width: 63px;
+    left: 760px;
+}
+
+.header-list li:hover .left6 {
+    left: 830px;
+}
+
+.header-list li:hover .right6 {
+    left: 900px;
+}
+
+.header-list li:hover .top6 {
+    width: 73px;
+    left: 830px;
+}
+
+.header-list li:hover .bottom6 {
+    width: 73px;
+    left: 830px;
+}
+
+@keyframes left {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: 3px;
+        height: 30px;
+    }
+}
+
+@keyframes right {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: 3px;
+        height: 30px;
+    }
+}
+
+@keyframes top {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        /* width: 175px;
+        height: 5px; */
+    }
+}
+
+@keyframes bottom {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        /* width: 175px;
+        height: 5px; */
+    }
+}
+
+.header-contant .header-icon .header-icon-list {
+    margin-left: 10px;
+}
+
+.header-contant .header-icon .header-icon-list li {
+    font-size: 28px;
+    text-decoration: none;
+    color: #590d22;
+}
+
+.header-contant .header-icon .header-icon-list li span {
+    background-color: #590d22;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    margin-left: -8px;
+    text-align: center;
+}
+
+.header-contant .header-icon .header-icon-list li p {
+    color: #590d22;
+    font-size: 16px;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-left: -8px;
+}
+
+/* ----------end header---------------- */
+
+/* ------------ main------------------ */
+.main-content {
+    width: 100%;
+    height: 70vh;
+    background-color: #800f2f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.main-content .main-detl {
+    width: 50%;
+    padding-left: 50px;
+}
+.main-content .main-detl .main-title {
+    font-size: 58px;
+    color: #fff;
+    padding-bottom: 50px;
+    line-height: 66px;
+
+}
+.main-content .main-detl .main-btn {
+    font-size: 24px;
+    background-color: #fff;
+    color: #590d22;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.main-content .main-detl .main-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* ------------------end main----------------- */
+
+/* -------------special----------------- */
+
+.special .special-title {
+    text-align: center;
+    font-size: 38px;
+    color: #590d22;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.special .special-title::after {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #590d22;
+    translate: all 2s;
+    margin-top: 10px;
+}
+
+.special .special-title:hover::after {
+    width: 300px;
+}
+
+.special .special-content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.special .special-content .special-content-detal {
+    width: 20%;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.special .special-content .special-content-detal p {
+    color: #575656;
+    font-size: 16px;
+}
+
+.special .special-content .special-content-detal h2 {
+    color: #800f2f;
+    font-size: 22px;
+}
+
+.special .special-content .special-content-detal i {
+    background-color: #800f2f;
+    color: #fcfffd;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    padding: 5px 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.special .special-content .special-content-detal:hover i {
+    visibility: visible;
+}
+
+/* -----------end special------------- */
+
+/* -----------discount----------- */
+.discount-cotent {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.discount-cotent .discount-cotent-itmep {
+    width: 50%;
+    background-color: #fff0f3;
+    position: relative;
+}
+
+.discount-cotent .discount-cotent-itmep i {
+    font-size: 66px;
+    color: #590d22;
+    display: block;
+    line-height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.discount-cotent .discount-cotent-itmep h2 {
+    font-size: 26px;
+    color: #590d22;
+    padding: 10px 80px;
+}
+
+.discount-cotent .discount-cotent-itmep span {
+    font-size: 16px;
+    color: #575656;
+    display: block;
+    position: absolute;
+    left: 80px;
+    top: 35px;
+}
+
+.discount-cotent .discount-cotent-itmep .discount-line {
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.discount-cotent .discount-cotent-itmep .discount-line div {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin-left: 10px;
+    background-color: #800f2f;
+
+}
+
+.discount-cotent .discount-cotent-itmep p {
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #575656;
+    padding: 20px;
+}
+
+.discount-cotent .discount-cotent-itme {
+    flex: 1;
+    height: 300px;
+    position: relative;
+    transition: all 1s;
+    border-radius: 1%;
+}
+
+.discount-cotent .discount-cotent-itme:hover {
+    transform: scale(1.1);
+}
+
+.discount-cotent .discount-cotent-itme:nth-child(2) {
+    background-image: url(../images/prfum01.png);
+    background-size: cover;
+    margin: 0 20px;
+
+}
+
+.discount-cotent .discount-cotent-itme:nth-child(3) {
+    background-image: url(../images/transparent-fragrance-day-perfume-leau-dorient-bottle-floral-perfume-bottle-with-floral-design-label65e404864604d8.8169753217094421822868.png);
+    background-size: cover;
+    background-color: #eee;
+    margin: 0 20px;
+}
+
+.discount-cotent .discount-cotent-itme p {
+    padding: 20px 20px 0 20px;
+    font-size: 20px;
+    color: #ff8097;
+}
+
+.discount-cotent .discount-cotent-itme h2 {
+    padding: 0px 20px;
+    font-size: 26px;
+    color: #c9184a;
+}
+
+/* ------------------end discount-------------------- */
+
+/* --------------delivery------------------- */
+.delivery-content {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #800f2f;
+}
+
+.delivery-content .delivery-item {
+    width: 20%;
+    text-align: center;
+
+
+}
+
+.delivery-content .delivery-item:not(:last-child) {
+    border-right: 1px solid #800f2f;
+}
+
+.delivery-content .delivery-item i {
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #575656;
+}
+
+.delivery-content .delivery-item:hover i {
+    /* transform: rotateZ(360deg); */
+    transform: translateY(-40%);
+    transition: 0.5s;
+    color: #a4133c;
+}
+
+.delivery-content .delivery-item h3 {
+    color: #590d22;
+}
+
+.delivery-content .delivery-item p {
+    color: #575656;
+    font-size: 16px;
+}
+
+/* --------------end delivery---------------- */
+
+/* ------------product------------------ */
+.products{
+    height: 100vh;
+}
+.products .products-title {
+    text-align: center;
+    font-size: 38px;
+    color: #590d22;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.products .products-title::after {
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: #590d22;
+    translate: all 2s;
+    margin-top: 10px;
+}
+
+.products .products-title:hover::after {
+    width: 300px;
+}
+.products .product-list{
+    list-style: none;
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+}
+.products .product-list li{
+    padding:50px;
+    font-size: 20px;
+    color: #575656;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+.products-content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.products-item-img{
+    position: relative;
+}
+.product-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scalex(0);
+    opacity: 0.9;
+    transition: 0.2s;
+}
+.products-item-list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.products-item-list i{
+    font-size: 38px;
+    color: rgba(89, 13, 34,1);
+    line-height: 30px;
+}
+.products-item:hover .product-overlay{
+    transform: scalex(1);
+}
+.products-item:hover .products-item-img > img{
+    opacity: 0.4;
+}
+.products-item-info{
+    padding: 10px 2px;
+    margin-bottom: 80px;
+}
+.products-item-info h2{
+    color: #590d22;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.products-item-info span{
+    color: #a4133c;
+    font-size: 20px;
+}
